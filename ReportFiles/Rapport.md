@@ -18,12 +18,14 @@ Nous avons identifier les paramètres en essayant de minimiser le critère:
 * nc : l'ordre de la matrice C
 
 En traçant le critère en fonction de na, puis,nb, puis nc, nous avons trouvé :
-
-* na = 3
-* nb = 2
-* nc = 2
-
 ![](cr_na_armax.png)
+* na = 3
+
+![](cr_nb_armax.png)
+* nb = 2
+
+![](cr_nc_armax.png)
+* nc = 2
 
 En comparant le modèle obtenu à la sortie réelle nous obtenons : 
 ![](ym_y_armax.png)
@@ -32,8 +34,14 @@ En comparant le modèle obtenu à la sortie réelle nous obtenons :
 ##Méthode gradient 
 
 De la mêm façon que pour la méthode des moindres carrés généralisés, nous identifions les paramètres nf et nb, en tentant de minimiser le critère, nous avons obtenu : 
+
+![](cr_nf_oe.png)
 * nf=2
+
+![](cr_nb_oe.png)
 * nb=2
+
+En comparant le modèle obtenu à la sortie réelle nous obtenons : 
 ![](ym_y_oe.png)
 
 ##Résultat comparaison 
