@@ -40,6 +40,6 @@ De la mêm façon que pour la méthode des moindres carrés généralisés, nous
 
 Lorsque nous comparons les deux estimations à la sortie réelle, pour les paramètres idetifiés ci-dessus, la méthode de gradient semble être plus proche de la réalité que la méthode ARMAX.
 
-![](_ym(arxmax&oe).png)
+![](y_ym(arxmax&oe).png)
 
 TODO : transfert function (continous, discret), gain statique, réponse indicielle 
