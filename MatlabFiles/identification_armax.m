@@ -5,13 +5,19 @@ u = entree618;
 y = sortie618;
 
 r= 1;
-na = 2;%validé
-nb = 2; %validé
-nc = 1; %validé
+% na = 2;%validé
+% nb = 2; %validé
+% nc = 1; %validé
 
-% na = 5;
-% nb = 5; 
-% nc = 4; 
+%nouveau calcul critère
+na = 5;
+nb = 3; 
+nc = 3; 
+
+% %test
+% na = 10;
+% nb = 8; 
+% nc = 8; 
 
 %Model in discret-time
 %Calcul fonction de transfert
@@ -20,10 +26,10 @@ th = armax([y u], [na nb nc r])
 ym = idsim(u, th);
 
 %%Calcul Critère pour identification
-CRc(nc) = sum((y-ym).' * (y-ym))/length(ym);
-%plot(CRb);
+% CRc(nc) = sum((y-ym).' * (y-ym))/length(ym);
+%  plot(CRc);
 
-% %fonction de transfert en discret
+
 % tfd = tf(th);
 % 
 % %système continu
@@ -33,7 +39,7 @@ CRc(nc) = sum((y-ym).' * (y-ym))/length(ym);
 % [A, B, C, D] = th2poly(thc);
 % 
 % %Fonction de transfert en continu
-% tfc = tf(B, A)
+tfc = tf(thc)
 % 
 % %réponse indicielle du modèle
 % Ymindic = step(thc);
