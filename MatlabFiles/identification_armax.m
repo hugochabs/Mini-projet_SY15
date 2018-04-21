@@ -9,8 +9,14 @@ na = 2;%validé
 nb = 2; %validé
 nc = 1; %validé
 
+% na = 5;
+% nb = 5; 
+% nc = 4; 
+
 %Model in discret-time
+%Calcul fonction de transfert
 th = armax([y u], [na nb nc r])
+%Modèle appliqué à l'entrée réelle
 ym = idsim(u, th);
 
 %%Calcul Critère pour identification
@@ -27,7 +33,7 @@ thc = d2c(th);
 [A, B, C, D] = th2poly(thc);
 
 %Fonction de transfert en continu
-tfc = tf(thc)
+tfc = tf(B, A)
 
 %réponse indicielle du modèle
 Ymindic = step(thc);
@@ -36,5 +42,5 @@ plot(ym, 'r');
 
 %plot(u, 'r');
 hold on;
-plot(y, 'b');
-%hold on;
+plot(y, 'g');
+hold on;

@@ -33,7 +33,7 @@ tfc = tf(thc)
 Ymindic = step(thc);
 
 %plot(Ymindic, 'm');
-%plot(ym, 'm');
+plot(ym, 'm');
 %plot(u, 'r');
-hold on;
-%plot(y, 'b');
+% hold on;
+% plot(y, 'b');

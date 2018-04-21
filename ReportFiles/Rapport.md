@@ -1,13 +1,24 @@
+<!-- 1- déterminer l'ordre du système, le retard et l'ordre du numérateur ;
+2- comparer les résultats obtenus avec deux méthodes, de votre choix, vues en cours et TD. Comparer les performances de ces méthodes et justifier le choix de la méthode retenue ;
+3- donner la fonction de transfert en échantillonné ;
+4- donner la fonction de transfert en continu ;
+5- quel est le gain statique ?
+6- donner la réponse à un échelon. -->
 #Compte-rendu mini-projet SY15
 
 ##Introduction
-Nous avons décidé deux méthodes pour identifier le système : méthode des moindres carrés généralisée (ARMAX) et gradient (OE)
+Cette étude consiste à detérminer le modèle de d'identification le plus approprié aux valeurs d'entrée/sortie qui nous a été attribuées. 
+Pour ceci nous allons tout d'abord étudier le système qui nous est présenté, puis choisir deux méthodes d'identification afin de construire des modèles et les comparer entre eux afin de déterminer lequel se rapproche le plus de la réalité. 
 
 ##Identification système
 
 Tout d'abord nous avons commencé par identifier le retard. Pour cela, nous avons regardé l'entrée et la sortie. Le retard correspond au temps durant lequel nous avons une sortie nulle pour une entrée non nulle. 
 Ici, la période de mesure est de 0.1 secondes, et pendant 12 mesures la sortie est nulle pour une entrée non nulle. 
 Donc, le retard est de 1,2 secondes, qui sera arrondi à 1 seconde par la suite. 
+
+##Choix de méthodes 
+
+Nous avons décidé deux méthodes pour identifier le système : méthode des moindres carrés généralisée (ARMAX) et gradient (OE).
 
 ##Méthode ARMAX
 
