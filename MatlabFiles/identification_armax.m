@@ -5,14 +5,9 @@ u = entree618;
 y = sortie618;
 
 r= 1;
-% na = 2;%validé
-% nb = 2; %validé
-% nc = 1; %validé
-
-%nouveau calcul critère
-na = 5;
-nb = 3; 
-nc = 3; 
+% % na = 2;%validé
+% % nb = 2; %validé
+% % nc = 1; %validé
 
 % %test
 % na = 10;
