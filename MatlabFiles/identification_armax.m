@@ -23,20 +23,20 @@ ym = idsim(u, th);
 CRc(nc) = sum((y-ym).' * (y-ym))/length(ym);
 %plot(CRb);
 
-%fonction de transfert en discret
-tfd = tf(th);
-
-%système continu
-thc = d2c(th);
-
-%forme polynomiale
-[A, B, C, D] = th2poly(thc);
-
-%Fonction de transfert en continu
-tfc = tf(B, A)
-
-%réponse indicielle du modèle
-Ymindic = step(thc);
+% %fonction de transfert en discret
+% tfd = tf(th);
+% 
+% %système continu
+% thc = d2c(th);
+% 
+% %forme polynomiale
+% [A, B, C, D] = th2poly(thc);
+% 
+% %Fonction de transfert en continu
+% tfc = tf(B, A)
+% 
+% %réponse indicielle du modèle
+% Ymindic = step(thc);
 
 plot(ym, 'r');
 

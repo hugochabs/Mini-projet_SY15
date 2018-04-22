@@ -44,7 +44,7 @@ En comparant le modèle obtenu à la sortie réelle nous obtenons :
 
 ##Méthode gradient 
 
-De la mêm façon que pour la méthode des moindres carrés généralisés, nous identifions les paramètres nf et nb, en tentant de minimiser le critère, nous avons obtenu : 
+De la même façon que pour la méthode des moindres carrés généralisés, nous identifions les paramètres nf et nb, en tentant de minimiser le critère, nous avons obtenu : 
 
 ![](cr_nf_oe.png)
 * nf=2
@@ -61,4 +61,23 @@ Lorsque nous comparons les deux estimations à la sortie réelle, pour les param
 
 ![](y_ym(arxmax&oe).png)
 
-TODO : transfert function (continous, discret), gain statique, réponse indicielle 
+Pour la suite, nous retenons la méthode de gradient. 
+
+##Fonction de transfert en échantilloné
+
+\frac{0.06639 z^-1 - 0.05903 z^-2}{1 - 1.95 z^-1 + 0.9568 z^-2}
+
+
+##Fonction de transfert en continu 
+
+\frac{0.06415 s + 0.007525}{s^2 + 0.04414 s + 0.00727}
+
+##Réponse à un échelon et gain statique 
+
+![](echelon_oe.png)
+
+Le gain statique (s = 0) vaut : 
+\frac{0.007525}{0.04414 + 0.00727}
+= 0.15
+
+

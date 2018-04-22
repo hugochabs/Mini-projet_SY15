@@ -8,17 +8,20 @@ r= 1;
 nb = 2; %validé
 nf = 2; %validé
 
+% nb = 4; 
+% nf = 2; 
+
 
 %Model in discret-time
 th = oe([y u], [nb nf r])
 ym = idsim(u, th);
 
 %%Calcul Critère pour identification
-%CRb(nb) = sum((y-ym).' * (y-ym))/length(ym);
+CRf(nf) = sum((y-ym).' * (y-ym))/length(ym);
 %plot(CRb);
 
 %fontion de transfert discret
-thd = tf(th);
+thd = tf(th)
 
 %%système continu
 thc = d2c(th);
@@ -32,8 +35,8 @@ tfc = tf(thc)
 %%réponse indicielle du modèle
 Ymindic = step(thc);
 
-%plot(Ymindic, 'm');
-plot(ym, 'm');
-%plot(u, 'r');
-% hold on;
-% plot(y, 'b');
+plot(Ymindic, 'm');
+% plot(ym, 'm');
+% %plot(u, 'r');
+%  hold on;
+%  plot(y, 'b');
