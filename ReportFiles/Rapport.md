@@ -57,16 +57,16 @@ En comparant le modèle obtenu à la sortie réelle nous obtenons :
 
 ##Résultat comparaison 
 
-Lorsque nous comparons les deux estimations à la sortie réelle, pour les paramètres idetifiés ci-dessus, la méthode de gradient semble être plus proche de la réalité que la méthode ARMAX.
+Lorsque nous comparons les deux estimations à la sortie réelle, pour les paramètres identifiés ci-dessus, la méthode de gradient semble être plus proche de la réalité que la méthode ARMAX.
 
 ![](y_ym(arxmax&oe).png)
 
-Pour la suite, nous retenons la méthode de gradient. 
+Pour la suite, nous retenons la méthode de **gradient**. 
 
 ##Fonction de transfert en échantilloné
 
 $$
-Hd(z) =  \frac{0.06639 z^-1 - 0.05903 z^-2}{1 - 1.95 z^-1 + 0.9568 z^-2}
+Hd(z) =  \frac{0.06639 z^{-1} - 0.05903 z^{-2}}{1 - 1.95 z^{-1} + 0.9568 z^{-2}}
 $$
 
 
