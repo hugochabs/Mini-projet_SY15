@@ -18,7 +18,7 @@ Donc, le retard est de 1,2 secondes, qui sera arrondi à 1 seconde par la suite.
 
 ##Choix de méthodes 
 
-Nous avons décidé deux méthodes pour identifier le système : méthode des moindres carrés généralisée (ARMAX) et gradient (OE).
+Nous avons choisi deux méthodes pour identifier le système : méthode des moindres carrés généralisée (ARMAX) et gradient (OE).
 
 ##Méthode ARMAX
 
@@ -65,19 +65,29 @@ Pour la suite, nous retenons la méthode de gradient.
 
 ##Fonction de transfert en échantilloné
 
-\frac{0.06639 z^-1 - 0.05903 z^-2}{1 - 1.95 z^-1 + 0.9568 z^-2}
+$$
+Hd(z) =  \frac{0.06639 z^-1 - 0.05903 z^-2}{1 - 1.95 z^-1 + 0.9568 z^-2}
+$$
+
+
 
 
 ##Fonction de transfert en continu 
 
-\frac{0.06415 s + 0.007525}{s^2 + 0.04414 s + 0.00727}
+$$
+H(s) = \frac{0.06415 s + 0.007525}{s^2 + 0.04414 s + 0.00727}
+$$
+
+
 
 ##Réponse à un échelon et gain statique 
 
 ![](echelon_oe.png)
 
 Le gain statique (s = 0) vaut : 
+
+$$
 \frac{0.007525}{0.04414 + 0.00727}
 = 0.15
-
+$$
 
