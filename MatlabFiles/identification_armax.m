@@ -5,14 +5,9 @@ u = entree618;
 y = sortie618;
 
 r= 1;
-% % na = 2;%validé
-% % nb = 2; %validé
-% % nc = 1; %validé
-
-% %test
-% na = 10;
-% nb = 8; 
-% nc = 8; 
+na = 2;%validé
+nb = 2; %validé
+nc = 2; %validé
 
 %Model in discret-time
 %Calcul fonction de transfert
@@ -25,23 +20,20 @@ ym = idsim(u, th);
 %  plot(CRc);
 
 
-% tfd = tf(th);
-% 
+tfd = tf(th);
+
 % %système continu
-% thc = d2c(th);
-% 
+thc = d2c(th);
+
 % %forme polynomiale
-% [A, B, C, D] = th2poly(thc);
-% 
+[A, B, C, D] = th2poly(thc);
+ 
 % %Fonction de transfert en continu
 tfc = tf(thc)
-% 
-% %réponse indicielle du modèle
-% Ymindic = step(thc);
 
 plot(ym, 'r');
 
 %plot(u, 'r');
 hold on;
-plot(y, 'g');
+plot(y, 'b');
 hold on;

@@ -8,10 +8,6 @@ r= 1;
 nb = 2; %validé
 nf = 2; %validé
 
-% nb = 4; 
-% nf = 2; 
-
-
 %Model in discret-time
 th = oe([y u], [nb nf r])
 ym = idsim(u, th);
@@ -35,8 +31,9 @@ tfc = tf(thc)
 %%réponse indicielle du modèle
 Ymindic = step(thc);
 
-plot(Ymindic, 'm');
-% plot(ym, 'm');
+hold on;
+%plot(Ymindic, 'm');
+plot(ym, 'm');
 % %plot(u, 'r');
-%  hold on;
-%  plot(y, 'b');
+hold on;
+plot(y, 'b');

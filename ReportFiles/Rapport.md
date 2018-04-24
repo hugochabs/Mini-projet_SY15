@@ -1,9 +1,3 @@
-<!-- 1- déterminer l'ordre du système, le retard et l'ordre du numérateur ;
-2- comparer les résultats obtenus avec deux méthodes, de votre choix, vues en cours et TD. Comparer les performances de ces méthodes et justifier le choix de la méthode retenue ;
-3- donner la fonction de transfert en échantillonné ;
-4- donner la fonction de transfert en continu ;
-5- quel est le gain statique ?
-6- donner la réponse à un échelon. -->
 #Compte-rendu mini-projet SY15
 
 ##Introduction
@@ -36,7 +30,7 @@ En traçant le critère en fonction de na, puis,nb, puis nc, nous avons trouvé 
 * nb = 2
 
 ![](cr_nc_armax.png)
-* nc = 2
+* nc = 1
 
 En comparant le modèle obtenu à la sortie réelle nous obtenons : 
 ![](ym_y_armax.png)
@@ -87,7 +81,7 @@ $$
 Le gain statique (s = 0) vaut : 
 
 $$
-\frac{0.007525}{0.04414 + 0.00727}
-= 0.15
+\frac{0.007525}{ 0.00727}
+= 1.035
 $$
 
